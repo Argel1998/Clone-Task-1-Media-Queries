@@ -1,4 +1,5 @@
-p.spacing {
+/* this is where i declare the paragraphs' fontsize, padding, margin, font family and their line height */
+p.spacing { 
 
     padding: 10px;
     margin: 20px;
@@ -7,14 +8,16 @@ p.spacing {
     line-height: 1.5;
 }
 
-body{
+/* i used 100% for the width and height and used a darker white color for the background for the div tag that follows the task */
+body{ 
 
     width:100%;
     height:100%;
     background-color: rgb(241, 238, 238);
 }
 
-.container{
+/* the container that holds all the pictures and text with the corresponding media queries inside it */
+.container{ 
 
     background-color: white;
     width:100%;
@@ -22,7 +25,8 @@ body{
     margin:auto;
 }
 
-footer {
+/* this is the bottom part of the work where the text for copyright is located with a black background color and fixed the text in the center with its padding */
+footer { 
 
     padding: 15px;
     background-color: rgb(41, 39, 39);
@@ -32,21 +36,22 @@ footer {
     height: 11px;
 }
 
+/* the tag that fixes the float, width & height of the images */
 img {
 
     float: left;
     height: 250px;
     width: 300px;
-    display: table-column;
+    display: table-column; /* using the display table column to fix those 6 images in place */
 }
 
-.logo{
+.logo{ /* the tag for the logo that seperates it for to the img tag */
 
     width: 100px;
-    display: table-row;
+    display: table-row; /* <--i used the table row display to put the logo on top of the images */
 }
 
-.logo img{
+.logo img{ /* a seperate tag for resizing the logo tag to be smaller than the 6 images */
     
     float:left;
     padding: 10px;
@@ -55,6 +60,8 @@ img {
     height: 50px;
 }
 
+/* the media queries is in proper order when resizing the browser in where if you  jumble this media queries, the responsive query wont work */
+/* the responsive query when it reaches 1024 pixels in the browser */
 @media screen and (max-width:1024px) {
    
     .container{
@@ -69,6 +76,7 @@ img {
 
 }
 
+/* the responsive query when it reaches 800px in the browser */
 @media screen and (max-width:800px) {
    
     .container{
@@ -83,6 +91,7 @@ img {
     }
 }
 
+/* the responsive query when it reaches 480px in the browser */
 @media screen and (max-width:480px) {
     
     .container {
